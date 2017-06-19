@@ -1,0 +1,15 @@
+<p>This rule detects usage of final methods in persisted entities</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+@Entity
+class MyCustomClass {
+	final void foo10() { ... } // Noncompliant
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+@Entity
+class MyCustomClass {
+	void foo10() { ... }
+}
+</pre>

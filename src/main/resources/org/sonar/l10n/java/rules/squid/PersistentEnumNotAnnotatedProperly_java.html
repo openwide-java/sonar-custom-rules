@@ -1,0 +1,29 @@
+<p>This rule detects usage enums not properly annoted</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+@Entity
+class MyCustomClass {
+
+	@Enumerated // Noncompliant
+	private MyEnum myField;
+	
+	@Enumerated(EnumType.ORDINAL)// Noncompliant
+	private MyEnum myField2;
+	
+	private MyEnum myField3; // Noncompliant
+	
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+@Entity
+class MyCustomClass {
+
+	@Enumerated(EnumType.STRING)
+	private MyEnum myField1;
+	
+	@Enumerated(value = EnumType.STRING)
+	private MyEnum myField2;
+	
+}
+</pre>

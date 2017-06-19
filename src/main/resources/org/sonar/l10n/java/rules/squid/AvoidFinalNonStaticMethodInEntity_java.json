@@ -1,0 +1,13 @@
+{
+  "title": "OW - Public method is final in persisted Entity",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "20min"
+  },
+  "tags": [
+    "entity"
+  ],
+  "defaultSeverity": "Blocker"
+}

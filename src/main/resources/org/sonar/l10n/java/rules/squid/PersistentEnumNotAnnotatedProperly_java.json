@@ -1,0 +1,13 @@
+{
+  "title": "OW - Persistent Enum not defined as EnumType.STRING",
+  "type": "CODE_SMELL",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "20min"
+  },
+  "tags": [
+    "enum"
+  ],
+  "defaultSeverity": "Blocker"
+}
